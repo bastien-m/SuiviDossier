@@ -1,0 +1,27 @@
+{
+  "name": "SuiviDossier",
+  "version": "0.0.1",
+  "authors": [
+    "method <method1990@gmail.com>"
+  ],
+  "description": "une application de suivi de declaration de sinistre pour SPB",
+  "main": "index.html",
+  "keywords": [
+    "SPB"
+  ],
+  "license": "SPB",
+  "homepage": "http://spb.eu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "~1.4.6",
+    "angular-resource": "~1.4.6",
+    "angular-route": "~1.4.6",
+    "materialize": "~0.97.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "suivi_dossier",
+  "version": "0.0.1",
+  "description": "application de suivi de dossier pour SPB",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -p 4000"
+  },
+  "keywords": [
+    "SPB"
+  ],
+  "author": "SPB",
+  "license": "SPB"
+}

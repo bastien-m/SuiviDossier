@@ -1,0 +1,29 @@
+<br><br>
+<h1 class="header center light-blue-text">Site de suivi de dossier SPB</h1>
+<div class="row center">
+	<h5 class="header col s12 light">Ce site vous permez de suivre en direct l'état de votre dossier chez SPB et nos différents prestataires.</h5>
+</div>
+
+
+
+<div class="row">
+	<form ng-submit="login()" class="col s6 offset-s3">
+		<div class="row">
+			<div class="input-field">
+				<i class="material-icons prefix">email</i>
+				<input id="email" ng-model="form.email" type="text" class="validate" required>
+				<label for="email">Email</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field">
+				<i class="material-icons prefix">work</i>
+				<input id="caseNumber" ng-model="form.caseNumber" type="text" class="validate" required>
+				<label for="caseNumber">Numéro de dossier</label>
+			</div>
+		</div>
+		<div class="row center">
+			<button type="submit" class="btn-large waves-effect waves-light light-blue darken-2">Connexion</button>
+		</div>
+	</form>
+</div>
