@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	
+
 	<menu-element></menu-element>
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
@@ -19,12 +19,15 @@
 		</div>
 	</div>
 
+	<ng-include src="'partials/footer.html'"></ng-include>
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
 
 	<!-- Angular -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/momentjs/min/moment-with-locales.min.js"></script>
 	<script src="app.js"></script>
 	<script src="controllers/MenuCtrl.js"></script>
 	<script src="controllers/LoginCtrl.js"></script>

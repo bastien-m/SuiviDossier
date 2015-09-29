@@ -7,11 +7,11 @@
 
 
 <div class="row">
-	<form ng-submit="login()" class="col s6 offset-s3">
+	<form name="loginForm" ng-submit="login()" class="col s6 offset-s3" novalidate>
 		<div class="row">
 			<div class="input-field">
 				<i class="material-icons prefix">email</i>
-				<input id="email" ng-model="form.email" type="text" class="validate" required>
+				<input id="email" ng-model="form.email" type="email" class="validate" required>
 				<label for="email">Email</label>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		<div class="row center">
-			<button type="submit" class="btn-large waves-effect waves-light light-blue darken-2">Connexion</button>
+			<button type="submit" ng-disabled="loginForm.$invalid" class="btn-large waves-effect waves-light light-blue darken-2">Connexion</button>
 		</div>
 	</form>
 </div>

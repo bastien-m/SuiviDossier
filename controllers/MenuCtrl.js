@@ -1,23 +1,22 @@
 angular.module('FollowCaseApp')
-	.controller('MenuCtrl', ['$scope', '$location', 'userServices', function($scope, $location, userServices) {
-		console.log(userServices);
-		console.log(angular.isDefined(userServices.caseNumber));
-		console.log(angular.isDefined(userServices.email));
-		if (angular.isDefined(userServices.caseNumber) && angular.isDefined(userServices.email)) {
+	.controller('MenuCtrl', ['$scope', '$location','$rootScope', 'userServices',
+	function($scope, $location, $rootScope, userServices) {
+
+		$scope.$on('userLoggedIn', function(event, args) {
 			$scope.isLogged = true;
-		}
-		else {
-			$scope.isLogged = false;
-		}
+		});
+
 
 
 		$scope.login = function() {
-			console.log('login');
+			userServices.logout();
+			$scope.isLogged = false;
 			$location.path('/login');
 		}
 
 		$scope.logout = function() {
 			userServices.logout();
+			$scope.isLogged = false;
 			$location.path('/login');
 		}
 

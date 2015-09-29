@@ -1,11 +1,11 @@
 angular.module('FollowCaseApp')
-	.controller('LoginCtrl', ['$scope', '$location', 'userServices', function($scope, $location, userServices) {
+	.controller('LoginCtrl', ['$scope', '$location', '$rootScope', 'userServices',
+	 function($scope, $location,$rootScope, userServices) {
 
 		$scope.login = function() {
-			console.log('user login');
 			userServices.login($scope.form.email, $scope.form.caseNumber);
-			console.log(userServices.email);
+			$rootScope.$broadcast('userLoggedIn');
 			$location.path('/Follow');
-		}		
+		}
 
 	}]);
